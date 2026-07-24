@@ -3,8 +3,10 @@ from rest_framework.response import Response
 
 
 @api_view(['GET'])
-def prueba(request):
+def prueba_usuario(request):
 
     return Response({
-        "mensaje":"Django conectado correctamente"
+        "nombre": "Administrador",
+        "rol": "Jefe TI",
+        "mensaje": "Django conectado correctamente"
     })
